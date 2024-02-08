@@ -1,4 +1,4 @@
-class students {
+export class students {
     private id: number;
     private name: string;
     private cgpa: number;
@@ -9,7 +9,7 @@ class students {
         this.cgpa=cgpa;
     }
 
-    display():void{
-    console.log(`ID =${this.id}, Name=${this.name}, CGPA=${this.cgpa}`);
+    displayStudentInfo():string{
+    return (`ID =${this.id}, Name=${this.name}, CGPA=${this.cgpa}`);
     } 
 }

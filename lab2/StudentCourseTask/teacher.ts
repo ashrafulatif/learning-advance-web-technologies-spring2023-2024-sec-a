@@ -1,11 +1,11 @@
-class teacher{
+export class teacher{
     teacherName: string;
-    course: string; 
-
-    constructor (teacherName: string , course: string)
+    constructor (teacherName: string)
     {
         this.teacherName= teacherName;
-        this.course=course;
     }
-
+    displayTeacherInfo(): string
+    {
+        return (`Teacher Name:${this.teacherName}`);
+    }
 }
