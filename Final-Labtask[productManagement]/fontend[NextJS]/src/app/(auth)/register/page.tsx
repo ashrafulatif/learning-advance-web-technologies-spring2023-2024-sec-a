@@ -1,7 +1,7 @@
 const Register = () => {
   return (
     <div>
-      <h1>Signup Page</h1>
+      <h1>Signup</h1>
       <input type="text" name="" id="" placeholder="Name" /> <br /> <br />
       <input type="text" name="" id="" placeholder="Username" /> <br />  <br />
       <input type="text" name="" id="" placeholder="Email" /> <br />  <br />
@@ -18,7 +18,7 @@ export default Register;
 
 export const generateMetadata = () => {
   return {
-    title: "Register Page",
-    description: "this is Register page created by app owner",
+    title: "Registration Page",
+    description: "this is Register page for creating new users",
   };
 };

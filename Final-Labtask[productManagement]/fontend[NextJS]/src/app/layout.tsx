@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header style={{ backgroundColor: "lightblue", padding: "5px" }}>
-          APWT
+          Product Management System
           <NavBar />
         </header>
         {children}

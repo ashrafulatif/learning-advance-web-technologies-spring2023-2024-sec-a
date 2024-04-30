@@ -1,11 +1,11 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const NavBar = () => {
   return (
     <div>
-        <Link href='/login'> Auth </Link>
+      <Link href="/"> Home </Link>| 
+      <Link href="/login"> Login </Link>
     </div>
-  )
-}
-
+  );
+};
 export default NavBar;
