@@ -2,15 +2,14 @@ export default function removeEmployer() {
   return (
     <>
       <div>
-        <h1>Remove Employer</h1>
-        <input type="text" name="" id="" placeholder="Username" /> <br /> <br />
+        <h1>Remove Product</h1>
         <input
-          type="password"
+          type="text"
           name=""
           id=""
-          placeholder="Admin Password"
+          placeholder="Product Name"
         /> <br /> <br />
-        <button>Remove Employer</button>
+        <button>Remove</button>
       </div>
     </>
   );

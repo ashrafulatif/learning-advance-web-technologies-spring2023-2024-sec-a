@@ -5,13 +5,13 @@ const AdminSidePanel = () => {
     <div>
       <h4>Admin</h4>
       <li>
-        <Link href="/registerEmployer">Add New Employer</Link>
+        <Link href="/registerProduct">Add New Product</Link>
       </li>
       <li>
-        <Link href="/updateEmployer">Update Employer</Link>
+        <Link href="/updateProduct">Update Product</Link>
       </li>
       <li>
-        <Link href="/deleteEmployer">Remove Employer</Link>
+        <Link href="/deleteProduct">Remove Product</Link>
       </li>
     </div>
   );
