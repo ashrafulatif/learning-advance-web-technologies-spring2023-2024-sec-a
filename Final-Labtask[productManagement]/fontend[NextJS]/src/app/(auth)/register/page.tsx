@@ -12,7 +12,7 @@ export default function Register() {
 
   const [error, setError] = useState("");
 
-  const handleChangeFullName = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeName = (e: ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
 
@@ -55,24 +55,20 @@ export default function Register() {
 
   async function postData() {
     try {
-      const formData = new FormData();
-      formData.append("name", name);
-      formData.append("username", username);
-      formData.append("email", email);
-      formData.append("phonenumber", phone);
-      formData.append("password", password);
+      const data = {
+        name: name,
+        username: username,
+        email: email,
+        phonenumber: phone,
+        password: password,
+      };
+
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_BACKEND_API_ENDPOINT}/auth/register/`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
+        data
       );
 
-      const data = response.data;
-      console.log(data);
+      console.log(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -87,7 +83,7 @@ export default function Register() {
             type="text"
             name="name"
             value={name}
-            onChange={handleChangeFullName}
+            onChange={handleChangeName}
             placeholder="Name"
           />
         </div>

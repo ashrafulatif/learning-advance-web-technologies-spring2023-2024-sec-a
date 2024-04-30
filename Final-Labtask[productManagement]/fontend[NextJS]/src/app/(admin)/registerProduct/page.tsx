@@ -56,7 +56,7 @@ export default function RegisterProduct() {
       formData.append("quantity", quantity);
 
       const response = await axios.post(
-        process.env.NEXT_BACKEND_API_ENDPOINT + "/admin/add-product/",
+        `${process.env.NEXT_PUBLIC_BACKEND_API_ENDPOINT}/admin/add-product/`,
         formData,
         {
           headers: {
