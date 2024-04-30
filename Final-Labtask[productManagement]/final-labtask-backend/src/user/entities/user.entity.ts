@@ -2,7 +2,7 @@ import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 import * as bcrypt from 'bcrypt';
 
-@Entity('users')
+@Entity('user')
 export class User {
   @PrimaryGeneratedColumn()
   id: number;
@@ -15,9 +15,6 @@ export class User {
 
   @Column({ nullable: false })
   email: string;
-
-  @Column({ nullable: false })
-  date: string;
 
   @Column({ nullable: false })
   phonenumber: string;

@@ -12,10 +12,7 @@ export class CreateUserDto {
   @IsEmail()
   @IsNotEmpty()
   email: string;
-  @IsNotEmpty()
-  date: string;
   @IsString()
-  @IsNotEmpty()
   phonenumber: string;
   @IsNotEmpty()
   @IsString()
