@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('productInfo')
+@Entity('productInfos')
 export class Admin {
   @PrimaryGeneratedColumn()
   id: number;
@@ -12,8 +12,8 @@ export class Admin {
   brand: string;
 
   @Column({ nullable: false })
-  price: string;
+  price: number;
 
   @Column({ nullable: false })
-  quantity: string;
+  quantity: number;
 }

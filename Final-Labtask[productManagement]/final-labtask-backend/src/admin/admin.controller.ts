@@ -35,8 +35,13 @@ export class AdminController {
     return this.adminService.update(+id, updateAdminDto);
   }
 
-  @Delete('/remove-product/:id')
-  remove(@Param('id') id: string) {
-    return this.adminService.remove(+id);
+  // @Delete('/remove-product/:id')
+  // remove(@Param('id') id: string) {
+  //   return this.adminService.remove(+id);
+  // }
+
+  @Delete('/remove-product/:name')
+  removeByName(@Param('name') name: string) {
+    return this.adminService.removeByName(name);
   }
 }

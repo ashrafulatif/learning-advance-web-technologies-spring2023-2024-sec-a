@@ -29,7 +29,11 @@ export class AdminService {
     return await this.adminRep.save(updatedProduct);
   }
 
-  async remove(id: number) {
-    return await this.adminRep.delete(id);
+  // async remove(id: number) {
+  //   return await this.adminRep.delete(id);
+  // }
+
+  async removeByName(name: string) {
+    return await this.adminRep.delete({ productName: name });
   }
 }

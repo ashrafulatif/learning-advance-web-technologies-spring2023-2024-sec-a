@@ -1,16 +1,19 @@
-import { IsNotEmpty, IsString, Length } from 'class-validator';
+import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
+
 export class CreateAdminDto {
   @IsNotEmpty({ message: 'empty value! Name cannot be empty' })
-  @Length(2)
   @IsString()
   productName: string;
-  @Length(50)
-  @IsNotEmpty({ message: 'empty value! username cannot be empty' })
+
+  @IsNotEmpty({ message: 'empty value! brand cannot be empty' })
+  @IsString()
   brand: string;
-  @IsNotEmpty({ message: 'empty value! company name cannot be empty' })
-  @Length(50)
-  price: string;
-  @IsNotEmpty({ message: 'empty value! phone number cannot be empty' })
-  @Length(50)
-  quantity: string;
+
+  @IsNotEmpty({ message: 'empty value! price cannot be empty' })
+  @IsNumber()
+  price: number;
+
+  @IsNotEmpty({ message: 'empty value! quantity cannot be empty' })
+  @IsNumber()
+  quantity: number;
 }

@@ -13,6 +13,9 @@ const AdminSidePanel = () => {
       <li>
         <Link href="/deleteProduct">Remove Product</Link>
       </li>
+      <li>
+        <Link href="/adminProfile">Profile</Link>
+      </li>
     </div>
   );
 };
